@@ -1,0 +1,33 @@
+- mariadb
+mysql -u root -p
+1234
+create database database_name
+use database_name
+
+- hrd 테이블 생성
+CREATE TABLE hrd( 
+index1 INT(7) NOT NULL, 
+title VARCHAR(100) NOT NULL, 
+place VARCHAR(30) NOT NULL, 
+term VARCHAR(17) NOT NULL, 
+term_start INT(6) NOT NULL, 
+term_end INT(6) NOT NULL, 
+term_time VARCHAR(20) NOT NULL, 
+emp_rate VARCHAR(10) NOT NULL, 
+link VARCHAR(150) NOT NULL, 
+adr VARCHAR(50) NOT NULL, 
+lat VARCHAR(20) NOT NULL, 
+lng VARCHAR(20) NOT NULL);
+
+- 내용 삭제
+delete from hrd;
+
+- 테이블 드랍
+drop table hrd;
+drop table tmp_hrd;
+
+- 테이블에 csv파일 넣기 (메모장 utf-8 인코딩 후)
+LOAD DATA LOCAL INFILE 'C:/Users/aaaa/Desktop/data_0506.csv' INTO TAble python.hrd FIELDS TERMINATED BY',';
+
+- 테이블 복제 생성
+create table tmp_hrd as select * from hrd;
