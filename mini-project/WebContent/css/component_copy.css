@@ -1,0 +1,112 @@
+[map] {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: burlywood;
+}
+
+[_left-list] {
+	background-color: #E4F7BA;
+	margin: 5%;
+	width: 90%;
+	height: 660px;
+	overflow: auto;
+}
+
+/* General styles for all menus */
+.cbp-spmenu {
+   background: #BCE55C;
+   position: fixed;
+   padding-left: 10px;
+   padding-right: 5px;
+}
+
+/* 왼쪽 메뉴 */
+.cbp-spmenu-vertical {
+   width: 360px;
+   height: 100%;
+   top: 0;
+}
+
+/* 왼쪽 슬라이드 숨겨질 때 */
+.cbp-spmenu-left {
+   left: -360px;
+}
+.cbp-spmenu-left.cbp-spmenu-open {
+   left: 0px;
+}
+
+/* 버튼 눌렀을 때 오른쪽으로 나오도록 하는 모션*/
+.cbp-spmenu,
+.cbp-spmenu-push {
+   -webkit-transition: all 0.3s ease;
+   -moz-transition: all 0.3s ease;
+   transition: all 0.3s ease;
+}
+
+
+btn:hover, .select-box-1:hover, .select-box:hover, .input-date:hover, #search-btn:hover, #showleft:hover {
+	cursor: pointer;
+}
+
+
+
+
+/*각 버튼 너비 높이 설정*/
+.select-box-1 {
+	margin: 4%;
+	margin-bottom: 0;
+   width: 40%;
+   height: 50px;
+   border: none;
+   vertical-align: center;
+   text-align-last: center;
+   
+}
+.input-keyword {
+	margin: 4%;
+	margin-bottom: 0;
+   width: 39%;
+   height: 46px;
+   border: none;
+   text-align: center;
+   background-color: #eaeaea;
+}
+.select-box {
+	margin: 4%;
+	margin-bottom: 0;
+   width: 40%;
+   height: 50px;
+   border: none;
+   vertical-align: center;
+   text-align-last: center;
+}
+.input-date {
+	margin: 4%;
+	margin-bottom: 0;
+   width: 39%;
+   height: 46px;
+   border: none;
+   text-align: center;
+   background-color: #eaeaea;
+}
+#search-btn {
+	margin: 4%;
+   width: 90%;
+   height: 50px;
+   border: none;
+   background-color: white;
+}
+#showLeft {
+   background-color: #BCE55C;
+   position: absolute;
+   top: 50%;
+   margin-top: -25px;
+   left: 370px;
+   width: 80px;
+   height: 50px;
+   border: none;
+   text-align: center;
+}
