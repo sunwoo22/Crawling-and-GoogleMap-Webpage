@@ -47,10 +47,10 @@ pw: 사용자비밀번호
 
 **main-server.jsp**   
 
-- DB 테이블명 / 컬럼명
+- DB 테이블명 / 컬럼명   
 sql 쿼리문의 테이블명과 컬럼명   
 
 
 **crawling.ipynb**   
-- hrd-net 크롤링 범위
+- hrd-net 크롤링 범위   
 lastpage 변경
